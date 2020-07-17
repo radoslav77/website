@@ -1,0 +1,49 @@
+﻿/*SCSS- stylesheet*/
+.navbar {
+	overflow: hidden;
+	color: #4F4C4E;
+	padding: 25px 10px 0 0;
+	a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 2px 3px;
+		text-decoration: none;
+		&:hover {
+			background-color: #ddd;
+			color: black;
+		}
+	}
+}
+.nav-link {
+	background-color: #ad9c32;
+	border-left: 3px solid black;
+	float: inherit;
+	width: 100%;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+	padding: 20px;
+	font-family: Arial;
+	padding-bottom: 50px;
+}
+.row {
+	> div {
+		padding: 20px;
+		border: 2px solid black;
+	}
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	display: contents;
+	a {
+		display: contents;
+	}
+}
