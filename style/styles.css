@@ -1,19 +1,22 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 'Lato', sans-serif;
   color: #777;
 }
 
 .bgimg {
-  background-image: url("images/apple.jpg");
+  background-image: url('https://radoslav77.github.io/pictures/images/apple.jpg');
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   opacity: 0.75;
-
 }
 
 .caption {
@@ -36,48 +39,49 @@ body, html {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 20px 'Lato', sans-serif;
   color: #111;
 }
 .footer {
-position:fixed;
-left:0;
-bottom:0;
-width:18%;
-background-color:red;
-color:white;
-text-align:left;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 18%;
+  background-color: red;
+  color: white;
+  text-align: left;
 }
-.navbar{
-overflow: hidden;
-background-color:#ad9c32
+.navbar {
+  overflow: hidden;
+  background-color: #ad9c32;
 }
 /*Style the topnav links*/
 .navbar a {
-float: right;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 2px 3px;
-text-decoration: none;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px 3px;
+  text-decoration: none;
 }
-.navbar a:hover{
-background-color: #ddd;
-color: black;
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 .newspaper {
-column-count: 2;
-column-gap: 80px;
-padding: 10px 80px 110px 250px;
-column-rule-style:solid;
-column-rule-width:1px;
-width: 70%;
+  column-count: 2;
+  column-gap: 80px;
+  padding: 10px 80px 110px 250px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  width: 70%;
 }
+
 h2 {
-column-span:all;
+  column-span: all;
 }
 .button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 12px 32px 0px 0px;
   text-align: center;
@@ -88,20 +92,52 @@ column-span:all;
   margin-left: 200px;
 }
 .button1 {
+  padding: 10px;
   background-color: white;
   color: black;
   border: 2px solid red;
   width: 17%;
-  }
+  overflow: hidden;
+}
 .button2 {
+  padding: 10px;
   background-color: white;
   color: black;
   border: 2px solid red;
   width: 17%;
+  overflow: hidden;
 }
 .button3 {
+  padding: 10px;
   background-color: white;
   color: black;
   border: 2px solid red;
   width: 17%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: none;
+    opacity: 0.5;
+  }
+  .newspaper {
+    width: 80%;
+    padding: 3px;
+    column-count: 1;
+    text-align: center;
+    padding-left: 40px;
+  }
+  .button1 {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .button2 {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .button3 {
+    font-size: 15px;
+    padding: 4px;
+  }
 }
